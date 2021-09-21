@@ -1,0 +1,267 @@
+@import "_mixin";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+.welcome {
+  color: #fff;
+  text-align: center;
+  @include section(#87509c, 60px, 140px);
+  .nav {
+    ul {
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      button {
+        padding: 0;
+        margin: 0 5px;
+        @include button(#fff, 16px);
+        &:hover {
+          background: #643a79;
+          border: none;
+          border-radius: 4px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .navbar {
+    background: #87509c;
+    padding: 60px 60px 10px 60px;
+  }
+  h1 {
+    margin-top: 145px;
+    font-size: 26px;
+    @include h(#f7f3ea, 140);
+    font-weight: bold;
+  }
+  .big-btn {
+    @include big-button(#eb7d4b, #c86a40);
+  }
+}
+
+.services {
+  @include section(#17c2a4);
+  color: #fff;
+  h2 {
+    @include h(#fff, 0);
+  }
+}
+
+.team {
+  @include section(#e7f1f8);
+  color: #3c4761;
+  h2 {
+    @include h(#3c4761, 0);
+  }
+  .feature-box {
+    .about-me {
+      font-weight: 400;
+      font-size: 16px;
+      color: #30bae7;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      margin: auto 5px;
+      display: inline-block;
+      list-style-type: none;
+    }
+  }
+}
+
+.skills {
+  @include section(#fff);
+  color: #3c4761;
+  h2 {
+    @include h(#3c4761, 0);
+  }
+  .progress-crl {
+    position: relative;
+    display: inline-block;
+    p {
+      display: inline-block;
+      position: absolute;
+      top: 10%;
+      left: 30%;
+      font-size: 43px;
+    }
+  }
+}
+
+.portfolio {
+  @include section(#ffdd99);
+  color: #393939;
+  h2 {
+    @include h(#393939, 0);
+  }
+  ul {
+    margin-top: 20px;
+    padding: 0;
+    li {
+      display: inline-block;
+      button {
+        margin: 0 5px;
+        background: #ebc985;
+        border: none;
+        border-radius: 4px;
+        @include button(#393939, 16px);
+        &:focus {
+          background: #fff;
+          border: none;
+          color: #393939;
+        }
+      }
+    }
+  }
+  .feature-box {
+    h3 {
+      font-weight: 400;
+      font-size: 18px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .big-btn {
+    @include big-button(#17c2a4, #14a58c);
+  }
+}
+
+.testimonials {
+  @include section(#d74680);
+  color: #fff;
+  h2 {
+    @include h(#fff, 0);
+  }
+  .feature-box {
+    blockquote {
+      p {
+        font-size: 18px;
+        font-style: italic;
+      }
+      cite {
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        div {
+          font-size: 18px;
+          color: #ffdd99;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.get-in-touch {
+  @include section(#3c5499);
+  color: #fff;
+  h2 {
+    @include h(#fff, 0);
+  }
+  p {
+    margin-bottom: 50px;
+  }
+  input {
+    display: inline-block;
+    background: #273a71;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 14px 24px 14px;
+    width: 414px;
+    height: 56px;
+    font-size: 18px;
+  }
+  textarea {
+    width: 70%;
+    color: #fff;
+    border: none;
+    background: #273a71;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 4px;
+    width: 860px;
+    height: 200px;
+    font-size: 18px;
+  }
+  .big-btn {
+    @include big-button(#30bae7, #299ec5);
+  }
+}
+
+.social {
+  background: #344b8e;
+  color: #fff;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: auto 25px;
+      padding: 0;
+      text-align: center;
+      width: 65px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        &:hover {
+          color: #30bae7;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  textarea {
+    max-width: 414px;
+  }
+  .social {
+    height: 150px;
+    li {
+      margin: 10px auto;
+    }
+  }
+  .testimonials {
+    .feature-box {
+      align-items: center;
+    }
+    img {
+      padding: 0;
+      display: block;
+      align-items: flex-start;
+    }
+    blockquote {
+      display: block;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .testimonials {
+    .feature-box {
+      display: flex;
+    }
+    img {
+      display: inline-block;
+      margin: 0;
+      height: 100px;
+      margin: 20px 40px;
+      align-items: flex-start;
+    }
+    blockquote {
+      display: inline-block;
+    }
+  }
+}

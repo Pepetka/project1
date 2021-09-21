@@ -1,0 +1,61 @@
+@mixin button($color, $fontsize, $height: 38px, $width: 84px) {
+  color: $color;
+  font-size: $fontsize;
+  height: $height;
+  width: $width;
+}
+@mixin big-button($bg-color, $border-color) {
+  @include button(#fff, 18px, 70px, 293px);
+  font-weight: 400;
+  &:hover {
+    color: #fff;
+  }
+  background: $bg-color;
+  margin-top: 60px;
+  border: none;
+  border-bottom: 5px $border-color solid;
+  border-radius: 4px;
+}
+@mixin section($color, $top: 120px, $bottom: 120px) {
+  background: $color;
+  padding-top: $top;
+  padding-bottom: $bottom;
+  h2 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  hr {
+    color: #000;
+    width: 87px;
+    height: 4px;
+    opacity: 0.149;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .feature-box {
+    margin-top: 80px;
+    img {
+      margin-bottom: 50px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    p {
+      margin-top: 26px;
+      font-size: 16px;
+    }
+  }
+}
+@mixin h($color: #fff, $margin-top: 0, $font-size: 46px, $font-weight: 700) {
+  font-family: "Titillium Web", sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  margin-top: $margin-top;
+  color: $color;
+}
