@@ -8,6 +8,20 @@ body {
   text-align: center;
   @include section(#87509c, 60px, 140px);
   .nav {
+    .logo {
+      display: inline-block;
+      height: auto;
+      line-height: auto;
+    }
+    .wrap {
+      display: table;
+      width: 100%;
+      height: auto;
+      &-block {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
     ul {
       padding: 0;
     }
