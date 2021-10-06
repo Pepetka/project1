@@ -24,31 +24,34 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="navbar">
+      <div class="nav-resp">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo">
+        </div>
+        <div class="menu">
+          <label class="burger-menu" id="burger-menu" for="checkbox" onclick>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </label>
+        </div>
+        <input id="checkbox" type="checkbox" value="0" name="burger" onchange="burger()" />
+      </div>
+      <div class="nav" id="menu-box">
+        <ul>
+          <li><button class="btn text-uppercase" type="button">home</button></li>
+          <li><button class="btn text-uppercase" type="button">about</button></li>
+          <li><button class="btn text-uppercase" type="button">work</button></li>
+          <li><button class="btn text-uppercase" type="button">blog</button></li>
+          <li><button class="btn text-uppercase" type="button">contact</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="welcome">
     <div class="container">
-      <div class="row">
-        <div class="navbar fixed-top">
-          <!-- <div class="col-lg-2 col-md-12"> -->
-          <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-          </div>
-          <!-- </div>
-        <div class="col-lg-8 col-md-12 offset-lg-2 offset-md-0 text-center"> -->
-          <div class="nav">
-            <div class="wrap">
-              <div class="wrap-box">
-                <ul>
-                  <li><button class="btn text-uppercase" type="button">home</button></li>
-                  <li><button class="btn text-uppercase" type="button">about</button></li>
-                  <li><button class="btn text-uppercase" type="button">work</button></li>
-                  <li><button class="btn text-uppercase" type="button">blog</button></li>
-                  <li><button class="btn text-uppercase" type="button">contact</button></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1 id="h1">Hi there! We are the new kids on the block<br>and we build awesome websites
@@ -87,21 +90,23 @@
           <div class="feature-box text-center">
             <img src="img/Flag icon.png" alt="flag icon">
             <h3 class="text-uppercase">branding</h3>
-            <p>Lorem ipsum dolor sit amet,<br>consectetuer adisping elit,<br>sed diam nonummy nibh.</p>
+            <p>Lorem ipsum dolor sit amet,<br class="not">consectetuer adisping elit,<br class="not">sed diam nonummy
+              nibh.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="feature-box text-center">
             <img src="img/Crayon icon.png" alt="crayon icon">
             <h3 class="text-uppercase">design</h3>
-            <p>Sed ut perspiciatis unde<br>omnis iste natus error sit<br>voluptatem </p>
+            <p>Sed ut perspiciatis unde<br class="not">omnis iste natus error sit<br class="not">voluptatem </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="feature-box text-center">
             <img src="img/Gears icon.png" alt="gears icon">
             <h3 class="text-uppercase">development</h3>
-            <p>At vero eos et accusamus et<br>iusto odio dignissimos qui<br>blanditiis praesentium.</p>
+            <p>At vero eos et accusamus et<br class="not">iusto odio dignissimos qui<br class="not">blanditiis
+              praesentium.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
@@ -138,9 +143,10 @@
             <img src="img/Mugshot.png" alt="photo">
             <h3 class="text-uppercase">ANNE HATHAWAY</h3>
             <h4 class="about-me">CEO / Marketing Guru</h4>
-            <p>Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit,<br>sed diam nonummy nibh<br>euismod
+            <p>Lorem ipsum dolor sit amet,<br class="not">consectetuer adipiscing elit,<br class="not">sed diam nonummy
+              nibh<br class="not">euismod
               tincidunt ut
-              laoreet<br>dolore magna.</p>
+              laoreet<br class="not">dolore magna.</p>
             <ul>
               <li><a href="#"><img src="img/Fb icon.png" alt="fb icon"></a></li>
               <li><a href="#"><img src="img/Twitter icon.png" alt="twitter icon"></a></li>
@@ -154,10 +160,10 @@
             <img src="img/Mugshot.png" alt="photo">
             <h3 class="text-uppercase">Kate Upton</h3>
             <h4 class="about-me">Creative Director</h4>
-            <p>Duis aute irure dolor in in<br>voluptate velit esse cillum<br>dolore fugiat nulla
-              pariatur.<br>Excepteur
+            <p>Duis aute irure dolor in in<br class="not">voluptate velit esse cillum<br class="not">dolore fugiat nulla
+              pariatur.<br class="not">Excepteur
               sint
-              occaecat non<br>diam proident.</p>
+              occaecat non<br class="not">diam proident.</p>
             <ul>
               <li><a href="#"><img src="img/Twitter icon.png" alt="twitter icon"></a></li>
               <li><a href="#"><img src="img/LinkedIn icon.png" alt="in icon"></a></li>
@@ -170,10 +176,11 @@
             <img src="img/Mugshot.png" alt="photo">
             <h3 class="text-uppercase">Olivia Wilde</h3>
             <h4 class="about-me">Lead Designer</h4>
-            <p>Nemo enim ipsam voluptas<br>sit aspernatur aut odit aut<br>fugit, sed quia consequuntur<br>magni
+            <p>Nemo enim ipsam voluptas<br class="not">sit aspernatur aut odit aut<br class="not">fugit, sed quia
+              consequuntur<br class="not">magni
               dolores
               eos qui
-              ratione<br>voluptatem nesciunt.</p>
+              ratione<br class="not">voluptatem nesciunt.</p>
             <ul>
               <li><a href="#"><img src="img/Fb icon.png" alt="fb icon"></a></li>
               <li><a href="#"><img src="img/Twitter icon.png" alt="twitter icon"></a></li>
@@ -187,8 +194,9 @@
             <img src="img/Mugshot.png" alt="photo">
             <h3 class="text-uppercase">Ashley Greene</h3>
             <h4 class="about-me">SEO / Developer</h4>
-            <p>Sed ut perspiciatis unde<br>omnis iste natus error sit<br>voluptatem accusantium<br>doloremque
-              laudantium,<br>totam
+            <p>Sed ut perspiciatis unde<br class="not">omnis iste natus error sit<br class="not">voluptatem
+              accusantium<br class="not">doloremque
+              laudantium,<br class="not">totam
               rem aperiam.</p>
             <ul>
               <li><a href="#"><img src="img/Fb icon.png" alt="fb icon"></a></li>
@@ -346,7 +354,8 @@
           <div class="feature-box">
             <img src="img/photo.png" alt="photo">
             <blockquote>
-              <p>“Nullam dapibus blandit orci, viverra<br>gravida dui lobortis eget. Maecenas<br>fringilla urna eu nisl
+              <p>“Nullam dapibus blandit orci, viverra<br class="not">gravida dui lobortis eget. Maecenas<br
+                  class="not">fringilla urna eu nisl
                 scelerisque.”
               </p>
               <cite>Chanel Iman<div>CEO of Pinterest</div></cite>
@@ -357,7 +366,8 @@
           <div class="feature-box">
             <img src="img/photo.png" alt="photo">
             <blockquote>
-              <p>“Vivamus luctus urna sed urna ultricies<br>ac tempor dui sagittis. In condimentum<br>facilisis porta.”
+              <p>“Vivamus luctus urna sed urna ultricies<br class="not">ac tempor dui sagittis. In condimentum<br
+                  class="not">facilisis porta.”
               </p>
               <cite>ADRIANA LIMA<div>Founder of Instagram</div></cite>
             </blockquote>
@@ -369,7 +379,8 @@
           <div class="feature-box">
             <img src="img/photo.png" alt="photo">
             <blockquote>
-              <p>“Vivamus luctus urna sed urna ultricies<br>ac tempor dui sagittis. In condimentum<br>facilisis porta.”
+              <p>“Vivamus luctus urna sed urna ultricies<br class="not">ac tempor dui sagittis. In condimentum<br
+                  class="not">facilisis porta.”
               </p>
               <cite>ANNE HATHAWAY<div>Lead Designer at Behance</div></cite>
             </blockquote>
@@ -379,7 +390,8 @@
           <div class="feature-box">
             <img src="img/photo.png" alt="photo">
             <blockquote>
-              <p>“Phasellus non purus vel arcu tempor<br>commodo. Fusce semper, purus vel luctus<br>molestie, risus sem
+              <p>“Phasellus non purus vel arcu tempor<br class="not">commodo. Fusce semper, purus vel luctus<br
+                  class="not">molestie, risus sem
                 cursus neque.”
               </p>
               <cite>EMMA STONE<div>Co-Founder of Shazam</div></cite>
