@@ -75,8 +75,6 @@ window.addEventListener('DOMContentLoaded', () => {
           content.forEach((elem) => {
             if (elem.classList.contains(btn.classList[btn.classList.length - 2])) {
               elem.style.display = 'block';
-            } else {
-              elem.style.display = 'none';
             }
           });
         }
